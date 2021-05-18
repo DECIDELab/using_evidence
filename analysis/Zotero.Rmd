@@ -172,6 +172,10 @@ Sau khi cài đặt Zotero, thông thường add-in để kết nối Zotero v�
 
 ## Tài liệu tham khảo 
 
+## Slide
+
+* [(2021-01-08) Sinh hoạt KHKT: Quản lý và trích dẫn tài liệu tham khảo với Zotero](https://decidelab.io/using_evidence/slides/Slide_SHKHKT_Zotero2.html)
+
 
 
 
