@@ -1,5 +1,6 @@
 ---
 title: "Quản lý và trích dẫn tài liệu tham khảo bằng Zotero"
+author: "Phùng Khánh Lâm"
 date: " 2021-01-08 (cập nhật: `r Sys.Date()`)"
 output:
     html_document:
