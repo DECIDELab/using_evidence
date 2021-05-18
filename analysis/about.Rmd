@@ -10,3 +10,9 @@ editor_options:
 Trang web được xây dựng nhằm hỗ trợ nhân viên y tế phát triển kỹ năng mềm về tìm kiếm và sử dụng y văn.
 
 Mọi thắc mắc về nội dung website xin gửi về [Phùng Khánh Lâm](phungkhanhlam@gmail.com)
+
+Để trích dẫn nội dung trên website này, xin vui lòng sử dụng thông tin trích dẫn như sau:
+
+```
+Phùng Khánh Lâm (2021). Tìm kiếm và sử dụng y văn. URL: https://decidelab.github.io/using_evidence/index.html
+```
