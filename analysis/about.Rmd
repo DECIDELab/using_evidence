@@ -1,0 +1,10 @@
+---
+title: "Giới thiệu"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+Trang web được xây dựng nhằm hỗ trợ nhân viên y tế phát triển kỹ năng mềm về tìm kiếm và sử dụng y văn

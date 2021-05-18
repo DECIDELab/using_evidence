@@ -1,0 +1,21 @@
+---
+title: "Nội dung"
+site: workflowr::wflow_site
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+# Tìm và sử dụng y văn
+
+## Y văn
+## Tìm kiếm y văn
+## Lưu trữ, quản lý và trích dẫn y văn
+
+* [Sử dụng phần mềm Zotero](https://decidelab.io/using_evidence/Zotero.html)
+
+## Phê bình y văn
+## Tổng quan y văn
+## Ra quyết định dựa trên y văn

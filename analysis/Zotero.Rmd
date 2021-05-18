@@ -1,0 +1,177 @@
+---
+title: "Quản lý và trích dẫn tài liệu tham khảo bằng Zotero"
+date: " 2021-01-08 (cập nhật: `r Sys.Date()`)"
+output:
+    html_document:
+      theme: cerulean
+      toc: yes
+      toc_float: yes
+bibliography: reference.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Giới thiệu về quản lý và trích dẫn tài liệu tham khảo 
+
+### Tài liệu tham khảo
+
+Bao gồm cả 
+
+* các tài liệu đã được công bố trên sách hoặc các tạp chí khoa học
+* những tài liệu chưa được công bố chính thức hoặc không được công bố rộng rãi trong giới khoa học (luận văn/luận án lưu trữ tại các thu viện của các trường đại học, các báo cáo lưu hành nội bộ, các văn bản quy phạm pháp luật, ...) (còn gọi là grey literature)
+
+Tài liệu tham khảo cũng không chỉ bao gồm văn bản viết (như nội dung trong sách/tạp chí) mà còn bao gồm cả bộ dữ liệu, phần mềm, website, chứng nhận sở hữu trí tuệ, ...
+
+Ngày nay, các tài liệu tham khảo (bao gồm bài báo khoa học và các bộ dữ liệu) thường có mã số định danh riêng gọi là DOI (Digital Object Identifier), được chuẩn hoá bởi tổ chức International Organization for Standardization (ISO). Mỗi tài liệu chỉ có một mã số định danh duy nhất, và việc sử dụng hệ thống mã số định danh giúp xác định nhanh chóng và chính xác tài liệu tham khảo tương ứng. Đối với các bài báo khoa học, DOI có cấu trúc "prefix/suffix", trong đó "prefix" thường có dạng "10.NNNN" với "NNNN" là 4 chữ số giúp xác định tổ chức đăng ký (các tạp chí), và "suffix" là chuỗi số và/hoặc ký tự do các tạp chí chọn để xác định từng bài báo của tạp chí đó.
+
+Đối với sách, mỗi cuốn sách có thể được xác định thông qua mã số ISBN (International Standard Book Number). ISBN bao gồm một chuỗi gồm 10 số (trước năm 2007) hoặc 13 số (từ năm 2007 đến nay).
+
+### Sử dụng tài liệu tham khảo
+
+Nhìn chung, các hoạt động của mỗi cá nhân liên quan đến tài liệu tham khảo có thể bao gồm:
+
+(1) Tìm thông tin về tài liệu tham khảo
+(2) Lấy tài liệu tham khảo (mua/mượn/tải về)
+(3) Đọc tài liệu tham khảo
+(4) Tạo giá trị thứ cấp từ tài liệu tham khảo (ghi chú, tóm tắt, lấy ý tưởng)
+(5) Lưu trữ tài liệu tham khảo
+(6) Trích dẫn tài liệu tham khảo
+(7) Chia sẻ tài liệu tham khảo
+
+Trong đó các hoạt động hay được quan tâm bao gồm các bước tìm thông tin (1), đọc (3), lưu trữ (5) và trích dẫn (6). Các công cụ hỗ trợ trước đây cũng chỉ tập trung vào các chức năng này. Những bước còn lại (lấy TLTK (2), tạo giá trị thứ cấp (4), chia sẻ (7)) thường không được thực hiện một cách hệ thống và ít được quan tâm. Ngày nay, những bước này đã được chú ý nhiều hơn, và các công cụ hỗ trợ hiện tại đã mở rộng các tính năng nhắm đến các hoạt động này.
+
+### Trích dẫn tài liệu tham khảo
+
+Khi viết các văn bản khoa học, chúng ta nên trích dẫn các tài liệu được viện dẫn nguyên văn (quote), hoặc được viện dẫn nhưng có thay đổi câu từ (paraphrase), hay tóm tắt lại (summarise). Ngoài ra, cũng cần trích dẫn tài liệu gốc khi mình lấy ý tưởng từ người khác hoặc trình bày các thông tin/dữ liệu không phải là kiến thức chung (các kiến thức chuyên biệt, các kiến thức còn tranh cãi).
+
+Một điểm cần lưu ý là việc trích dẫn hay không trích dẫn không phụ thuộc vào nguồn thông tin hay cách thông tin được công bố. 
+### Cách trích dẫn tài liệu tham khảo
+
+Có 3 thành phần chính khi trích dẫn tài liệu tham khảo
+
+* Trích dẫn trong văn bản (in-text citation)
+* Danh mục tài liệu tham khảo (reference list/bibliography)
+* Phong cách trích dẫn: hình thức trích dẫn trong văn bản và danh mục tài liệu tham khảo
+
+Hiện có 3 phong cách trích dẫn khác nhau:
+
+* Hệ thống trích dẫn bằng số: ví dụ như kiểu trích dẫn Vancouver
+* Hệ thống dùng tên-năm: ví dụ như kiểu trích dẫn của APA (Hiệp hội Tâm lý học Hoa Kỳ)
+* Hệ thống theo kiểu ghi chú: ví dụ như kiểu trích dẫn Chicago
+
+## Zotero cơ bản
+
+Để hỗ trợ các hoạt động liên quan đến tài liệu tham khảo, hiện có rất nhiều phần mềm ra đời phục vụ cho mục đích quản lý và trích dẫn tài liệu tham khảo như Endnote, Citavi, Jabref, Mendeley, ReadCube, Reference Manager, .... Zotero là một trong những công cụ như vậy, miễn phí và được sử dụng rộng rãi.
+
+Chữ "Zotero" có nguồn gốc từ tiếng Albania, có nghĩa là "to master".  Phần mềm này được xây dựng bởi "Center for History and New Media" của George Mason University. Hiện tại phần mềm được cập nhật và duy trì bởi tổ chức [Corporation for Digital Scholarship](https://digitalscholar.org/).
+
+Phần mềm ra đời lần đầu vào năm 2006, dưới dạng một add-on trên trình duyệt Firefox. Đến năm 2011, phần mềm được nâng cấp thành bản hoạt động độc lập (Zotero Standalone, dủng được cho cả hệ điều hành Windows/MacOS/Linux) cùng các công cụ kết nối với các trình duyệt (web connectors) Safari và Chrome. Năm 2012, phiên bản 3.0 có add-in để trích dẫn tài liệu tham khảo trên các phần mềm soạn thảo văn bản như Word, LibreOffice. Phiên bản 4.0 ra đời năm 2013 có tính năng tự động tải về bản pdf của tài liệu tham khảo. Năm 2017, phiên bản 5.0 ra đời hoàn toàn độc lập với Firefox, và năm 2018 thêm tính năng tự động cảnh bảo các bài báo đã bị các tạp chí khoa học gỡ bỏ (retract) dựa trên cơ sở dữ liệu của tổ chức [Retraction Watch](https://retractionwatch.com/).
+
+Hiện tại hệ sinh thái của Zotero bao gồm:
+
+* Phần mềm cài đặt trên Desktop: [Zotero 5.0](https://www.zotero.org/download/)
+* Hệ thống lưu trữ cơ sở dữ liệu trực tuyến: [Zotero Web](https://www.zotero.org/user/register/)
+* Công cụ kết nối Zotero với các trình duyệt Chrome, Firefox, Safari, Edge: [Zotero Connector](https://www.zotero.org/download/)
+* Công cụ giúp kết nối Zotero với trình duyệt khi dùng trên điện thoại: [Zotero Bookmarklet](https://www.zotero.org/download/bookmarklet) 
+* Công cụ giúp tạo danh mục tài liệu tham khảo theo kiểu định sẵn mà không cần cài đặt phần mềm: [Zoterobib](https://zbib.org/) 
+* Công cụ do bên thứ ba phát triển giúp mở rộng tính năng: [plugins](https://www.zotero.org/support/plugins) 
+
+### Sử dụng Zotero Client Interface (Zotero Desktop)
+
+#### Cài đặt
+
+* Bản desktop: tải về tại [link này](https://www.zotero.org/download) rồi double click để cài đặt theo hướng dẫn.
+
+* Zotero Connector: vào [link này](https://www.zotero.org/download) rồi cài đặt theo hướng dẫn.
+
+#### Giao diện
+
+```{r, fig.cap="Giao diện của Zotero 5.0", echo=FALSE, out.width="100%"}
+knitr::include_graphics("assests/Zotero_GUI.png")
+```
+
+Giao diện của Zotero 5.0 gồm các phần như sau:
+
+* Thanh điều khiển: với các mục như File, Edit, View, Tools, Window, Help
+* Các công cụ tiện ích: bao gồm 
+    + "New Collection": tạo thư mục mới
+    + "New Library": tạo thư viện chia sẻ mới
+    + "New item": thêm tài liệu tham khảo mới từ file hoặc tự gõ bằng tay
+    + "Add Item(s) by Identifier": thêm tài liệu tham khảo mới bằng identifier như ISBN (sách),  DOI/PubMedID/ArXivID (bài báo) 
+    + "New Note": tạo ghi chú mới
+    + "Add Attachment": thêm tài liệu đính kèm cho tài liệu tham khảo
+    + "Advanced Search": tìm kiếm nâng cao
+    + Ô tìm kiếm nhanh bằng "All Fields & Tags"/"Title, Creator, Year"/"Everything"
+    + "Locate": xem thông tin mở rộng về tài liệu tham khảo trên các cơ sở dữ liệu khác
+    + "Sync with Zotero.org": đồng bộ hoá dữ liệu với Zotero Web
+* Cấu trúc thư mục: liệt kê tất cả các thư mục và thư viện nhóm có trong cơ sở dữ liệu trong máy tính
+* Liệt kê tất cả các Tags có trong cơ sở dữ liệu
+* Danh mục tài liệu tham khảo: mỗi tài liệu tham khảo là một hàng, với các thông tin cơ bản
+* Thông tin chi tiết về tài liệu tham khảo: thông tin chi tiết về tài liệu tham khảo được chọn, bao gồm cả các ghi chú, tags và tài liệu liên quan
+
+#### Thêm tài liệu tham khảo
+
+Với Zotero, tài liệu tham khảo có thể được bổ sung vào cơ sở dữ liệu bằng các cách sau:
+
+* Qua Zotero Connector: Xem tài liệu trên trình duyệt internet, sau đó click vào Zotero Connector để tải thông tin của tài liệu tham khảo (kể cả file pdf nếu có file dạng open access) về cơ sở dữ liệu trên Zotero 5.0
+* Qua file pdf: Mở file pdf bằng trình duyệt rồi click vào Zotero Connector để tải thông tin của tài liệu tham khảo về. Hoặc tải file pdf về máy, sau đó từ Zotero 5.0 chọn công cụ "New Item" để thêm file pdf vào cơ sở dữ liệu (thông tin về tài liệu tham khảo sẽ được tải về ngay sau đó). Lưu ý chức năng này có thể không hiệu quả với các file pdf tạo ra từ file ảnh (phần mềm không nhận diện được thông tin trên file pdf).
+* Qua Identifier: Từ Zotero 5.0 dùng công cụ "Add Item(s) by Identifier" để thêm tài liệu tham khảo từ identifier của chúng (Zotero sẽ tự tải về file pdf nếu có file dạng open access)
+* Nhập tay: Từ Zotero 5.0 dùng công cụ "New Item" để chọn loại tài liệu tham khảo rồi gõ tay các thông tin về tài liệu tham khảo
+* Từ cơ sở dữ liệu của các phần mềm quản lý tài liệu tham khảo khác (Endnote, Mendeley,...): xuất cơ sở dữ liệu của các phần mềm quản lý tài liệu tham khảo khác, trên Zotero 5.0 vào trình đơn File, chọn Import... 
+
+#### Chỉnh sửa thông tin về tài liệu tham khảo
+
+Tại giao diện chính, chọn thư mục chứa tài liệu tham khảo, chọn tài liệu tham khảo muốn chỉnh sửa, sau đó chỉnh sửa vào mục Info của tài liệu tham khảo đó.
+
+### Sử dụng Zotero Web
+
+#### Đăng ký tài khoản Zotero
+
+#### Đồng bộ hoá (synchronize) Zotero Desktop và Zotero Web
+
+Nhấn nút "Sync with Zotero.org" để đồng bộ cơ sở dữ liệu của Zotero Desktop và Zotero Web.
+
+Trong lần đồng bộ đầu tiên, sẽ cần nhập thông tin account (tên account và password) của Zotero Web vào Zotero 5.0. Để điều chỉnh thông tin này, vào trình đơn Zotero --> Preferences --> Sync --> Settings.
+
+### Trích dẫn tài liệu tham khảo với Zotero
+
+#### Cài đặt add-in cho phần mềm soạn thảo
+
+Sau khi cài đặt Zotero, thông thường add-in để kết nối Zotero với phần mềm soạn thảo văn bản (Word/LibreOffice) sẽ được tự động cài đặt. Trong một số trường hợp, nếu không thấy mục Zotero trên thanh công cụ của Word, có thể cài đặt lại add-in này bằng cách từ Zotero 5.0 --> trình đơn Zotero --> Preferences --> Cite --> Word processors --> Install Microsoft Word/LibreOffice add-in
+
+#### Trích dẫn trong phần mềm soạn thảo
+
+* Viết văn bản.
+* Đặt con trỏ tại vị trí cần trích dẫn, vào mục Zotero trên thanh công cụ --> Add/Edit Citation --> cửa sổ chọn tài liệu trong Zotero 5.0 sẽ hiện ra, chọn tài liệu phù hợp rồi Enter.
+* Để tạo danh mục tài liệu tham khảo, vào mục Zotero trên thanh công cụ --> Add/Edit Bibliography.
+* Để thay đổi style trích dẫn, vào mục Zotero trên thanh công cụ --> Document Preferences --> chọn Style phù hợp.
+
+## Zotero nâng cao
+
+### Tìm kiếm tài liệu tham khảo trong cơ sở dữ liệu
+
+### Tạo báo cáo về các tài liệu tham khảo
+
+### Chia sẻ tài liệu tham khảo (thư viện nhóm, Group Library)
+
+### Sử dụng các tính năng mở rộng trên Zotero
+
+### Tuỳ chỉnh cách trích dẫn với CSL
+
+### Ghi chú và quản lý ghi chú với Zotero
+
+### Tìm kiếm hỗ trợ khi gặp khó khăn
+
+## Tổng kết
+
+### So sánh Zotero vs. các phần mềm tương tự
+
+### Vì sao nên sử dụng Zotero?
+
+## Tài liệu tham khảo 
+
+
+
+
