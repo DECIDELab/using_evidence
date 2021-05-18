@@ -46,7 +46,8 @@ Trong đó các hoạt động hay được quan tâm bao gồm các bước tì
 
 Khi viết các văn bản khoa học, chúng ta nên trích dẫn các tài liệu được viện dẫn nguyên văn (quote), hoặc được viện dẫn nhưng có thay đổi câu từ (paraphrase), hay tóm tắt lại (summarise). Ngoài ra, cũng cần trích dẫn tài liệu gốc khi mình lấy ý tưởng từ người khác hoặc trình bày các thông tin/dữ liệu không phải là kiến thức chung (các kiến thức chuyên biệt, các kiến thức còn tranh cãi).
 
-Một điểm cần lưu ý là việc trích dẫn hay không trích dẫn không phụ thuộc vào nguồn thông tin hay cách thông tin được công bố. 
+Một điểm cần lưu ý là việc trích dẫn hay không trích dẫn không phụ thuộc vào nguồn thông tin hay cách thông tin được công bố.
+
 ### Cách trích dẫn tài liệu tham khảo
 
 Có 3 thành phần chính khi trích dẫn tài liệu tham khảo
