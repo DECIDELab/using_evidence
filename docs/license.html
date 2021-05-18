@@ -249,7 +249,7 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Tìm và sử dụng y văn</a>
+      <a class="navbar-brand" href="index.html">Tìm kiếm và sử dụng y văn</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -287,7 +287,7 @@ $(document).ready(function () {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -296,7 +296,7 @@ $(document).ready(function () {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -308,7 +308,7 @@ $(document).ready(function () {
 <strong>Last updated:</strong> 2021-05-19
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>using_evidence/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -324,28 +324,28 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomdecidelabusingevidencetreee05212056f5a8d119fb393f6bf9cadb22e343244targetblanke052120a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/decidelab/using_evidence/tree/e05212056f5a8d119fb393f6bf9cadb22e343244" target="_blank">e052120</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomdecidelabusingevidencetree23a2d86580c2124647ed1ee9f672ddd7f857caf7targetblank23a2d86a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/decidelab/using_evidence/tree/23a2d86580c2124647ed1ee9f672ddd7f857caf7" target="_blank">23a2d86</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomdecidelabusingevidencetreee05212056f5a8d119fb393f6bf9cadb22e343244targetblanke052120a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomdecidelabusingevidencetree23a2d86580c2124647ed1ee9f672ddd7f857caf7targetblank23a2d86a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/decidelab/using_evidence/tree/e05212056f5a8d119fb393f6bf9cadb22e343244" target="_blank">e052120</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/decidelab/using_evidence/tree/23a2d86580c2124647ed1ee9f672ddd7f857caf7" target="_blank">23a2d86</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -362,8 +362,7 @@ Untracked files:
     Untracked:  using_evidence.Rproj
 
 Unstaged changes:
-    Modified:   analysis/about.Rmd
-    Modified:   analysis/license.Rmd
+    Modified:   analysis/_site.yml
 
 </code></pre>
 <p>
@@ -402,6 +401,57 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/decidelab/using_evidence/blob/23a2d86580c2124647ed1ee9f672ddd7f857caf7/analysis/license.Rmd" target="_blank">23a2d86</a>
+</td>
+<td>
+lampk
+</td>
+<td>
+2021-05-19
+</td>
+<td>
+Publish the initial files for my project
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/decidelab/using_evidence/blob/308a44dd4200ffa46aabc2b872d4d40d65edab16/analysis/license.Rmd" target="_blank">308a44d</a>
+</td>
+<td>
+lampk
+</td>
+<td>
+2021-05-19
+</td>
+<td>
+update license
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/decidelab/using_evidence/308a44dd4200ffa46aabc2b872d4d40d65edab16/docs/license.html" target="_blank">308a44d</a>
+</td>
+<td>
+lampk
+</td>
+<td>
+2021-05-19
+</td>
+<td>
+update license
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -445,6 +495,8 @@ Publish the initial files for my project
 </div>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
 <p>Mọi thắc mắc về nội dung website xin gửi về <a href="phungkhanhlam@gmail.com">Phùng Khánh Lâm</a></p>
+<p>Để trích dẫn nội dung trên website này, xin vui lòng sử dụng thông tin trích dẫn như sau:</p>
+<pre><code>Phùng Khánh Lâm (2021). Tìm kiếm và sử dụng y văn. URL: https://decidelab.github.io/using_evidence/index.html</code></pre>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
