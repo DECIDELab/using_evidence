@@ -14,7 +14,7 @@ editor_options:
 ## Tìm kiếm y văn
 ## Lưu trữ, quản lý và trích dẫn y văn
 
-* [Sử dụng phần mềm Zotero](https://decidelab.io/using_evidence/Zotero.html)
+* [Sử dụng phần mềm Zotero](https://decidelab.github.io/using_evidence/Zotero.html)
 
 ## Phê bình y văn
 ## Tổng quan y văn
