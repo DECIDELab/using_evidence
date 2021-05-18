@@ -1,7 +1,7 @@
 name: using_evidence
 output_dir: ../docs
 navbar:
-  title: Tìm và sử dụng y văn
+  title: Tìm kiếm và sử dụng y văn
   left:
   - text: Giới thiệu
     href: about.html
