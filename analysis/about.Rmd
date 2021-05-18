@@ -7,4 +7,6 @@ editor_options:
   chunk_output_type: console
 ---
 
-Trang web được xây dựng nhằm hỗ trợ nhân viên y tế phát triển kỹ năng mềm về tìm kiếm và sử dụng y văn
+Trang web được xây dựng nhằm hỗ trợ nhân viên y tế phát triển kỹ năng mềm về tìm kiếm và sử dụng y văn.
+
+Mọi thắc mắc về nội dung website xin gửi về [Phùng Khánh Lâm](phungkhanhlam@gmail.com)
